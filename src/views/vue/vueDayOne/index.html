@@ -1,0 +1,54 @@
+<div :class="$style.banxin">
+  <!-- v-text -->
+  <div v-text="vText" :class="$style.vim_text"></div>
+  <!-- v-html -->
+  <div v-html="vHtml" :class="$style.vim_html"></div>
+  <!-- v-bind -->
+  <div :class="$style.vim_box">v-bind</div>
+  <!-- v-for数组 -->
+  <div :class="$style.vim_for">
+    <ul>
+      <li v-for="(item,index) in vForOne" :key="index">{{ item }}</li>
+    </ul>
+  </div>
+  <!-- v-for 对象 -->
+  <div :class="$style.vim_for">
+    <ul>
+      <li v-for="(value, key ,index) in vForTwo" :key="index">
+        {{ value }}---{{ key }}
+      </li>
+    </ul>
+  </div>
+  <!-- v-model -->
+  <div :class="$style.vim_model">
+    <div>{{ vModel }}</div>
+    <el-input v-model="vModel" placeholder="v-model案例"></el-input>
+  </div>
+  <!-- v-on -->
+  <div :class="$style.vim_on">
+    <el-button round @click="vOn($event)">v-on事件</el-button>
+    <!-- 事件修饰符 -->
+    <el-button round @click.stop="vOn($event)">v-on事件修饰符</el-button>
+  </div>
+  <!-- v-if -->
+  <div :class="$style.vim_ifelse">
+    <el-button round @click="vIfElse">v-if&else事件</el-button>
+    <p v-if="vifelse">v-if</p>
+    <p else>else</p>
+  </div>
+  <!-- v-show -->
+  <div :class="$style.vim_show">
+    <el-button round @click="vShow">v-if&else事件</el-button>
+    <p v-show="vshow === true">v-show-true</p>
+    <p v-show="vshow === false">v-show-false</p>
+  </div>
+  <!-- v-cloak -->
+  <div :class="$style.vim_cloak">
+    <p v-cloak>v-cloak用来解决闪烁的问题</p>
+  </div>
+  <!-- v-pre&v-once -->
+  <div :class="$style.vim_PreOnce">
+    <p v-pre>{{preonce}}</p>
+    <p v-once>{{preonce}}</p>
+  </div>
+</div>

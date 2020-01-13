@@ -1,0 +1,15 @@
+.banxin {
+  .watch {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+  }
+  .computed {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    .computed_pen {
+      width: 100px;
+    }
+  }
+}

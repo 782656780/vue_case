@@ -1,0 +1,27 @@
+<div :class="$style.banxin">
+  <div :class="$style.falter">
+    名字:{{ myData.name }}----年龄:{{ myData.age }}
+  </div>
+  <div :class="$style.sonbox">
+    <div>二号组件的名字{{ sontowName }}</div>
+    <el-button round @click="getSontowName">获取组件二的名字</el-button>
+  </div>
+  <!-- 子组件 -->
+  <son_brotherone
+    :brotherOne="son.brotherone"
+    @fatername="getMy"
+  ></son_brotherone>
+  <son_brothertwo
+    :brotherTwo="son.brothertwo"
+    ref="referenceName"
+  ></son_brothertwo>
+  <!-- 插槽 -->
+  <anonymous_slot>我是匿名插槽</anonymous_slot>
+  <named_slot>
+    <p slot="big">我是具名插槽</p>
+  </named_slot>
+  <named_slot>
+    <p slot="mini">我是具名插槽</p>
+  </named_slot>
+  <component :is="componentId">控制组件显示和隐藏</component>
+</div>

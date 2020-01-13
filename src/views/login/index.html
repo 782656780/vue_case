@@ -1,0 +1,51 @@
+<div :class="$style.banxin">
+  <!-- 包裹盒子 -->
+  <div :class="$style.parcel">
+    <!-- 登录 -->
+    <div :class="$style.login">
+      <!-- <div class="clearfix"></div> -->
+      <div :class="$style.login_from">
+        <el-form ref="loginFrom" :model="loginFrom" :class="$style.login_from">
+          <el-form-item>
+            <el-avatar
+              shape="square"
+              :size="100"
+              :fit="loginFrom.fits"
+              :src="loginFrom.headPortrait"
+            ></el-avatar>
+            <span :class="$style.login_span">
+              <i class="el-icon-s-promotion" />{{ loginFrom.loginName }}
+            </span>
+          </el-form-item>
+          <el-form-item>
+            <el-input v-model="loginFrom.userName" placeholder="请输入用户名">
+              <i slot="prefix" class="el-icon-s-custom"></i>
+            </el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-input
+              v-model="loginFrom.passWord"
+              placeholder="请输入密码"
+              show-password
+            >
+              <i slot="prefix" class="el-icon-key"></i>
+            </el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button :class="$style.login_button" @click="Login"
+              >登录</el-button
+            >
+          </el-form-item>
+        </el-form>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div :class="$style.registered">
+      <div :class="$style.registered_box">
+        <h1 :class="$style.box_hone">没有注册账号</h1>
+        <p :class="$style.box_pen">立即注册加入我们,和我们一起开始旅程吧!</p>
+        <el-button :class="$style.box_button">注册</el-button>
+      </div>
+    </div>
+  </div>
+</div>

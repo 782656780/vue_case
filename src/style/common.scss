@@ -1,0 +1,32 @@
+// 公共样式
+.el-scrollbar__wrap {
+  overflow: auto !important;
+}
+.el-menu {
+  border-right: none;
+}
+.el-main {
+  padding: 0;
+}
+.el-table .cell {
+  padding: 0;
+}
+.el-table th div {
+  padding: 0;
+}
+.el-table--border th:first-child .cell {
+  padding-left: 0;
+}
+.el-table--border td:first-child .cell {
+  padding-left: 0;
+}
+.el-dialog__body {
+  padding: 0px 20px;
+}
+.el-form-item__label {
+  font-size: 12px;
+}
+.kmcgc_common_upload .el-upload-dragger {
+  width: 550px;
+  height: 280px;
+}

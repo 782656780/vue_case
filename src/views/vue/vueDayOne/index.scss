@@ -1,0 +1,49 @@
+.banxin {
+  .vim_text {
+    height: 30px;
+    padding-bottom: 20px;
+  }
+  .vim_html {
+    height: 30px;
+    padding-bottom: 20px;
+  }
+  .vim_box {
+    height: 30px;
+    background-color: #303f9f;
+    padding-bottom: 20px;
+  }
+  .vim_for {
+    height: 30px;
+    padding-bottom: 20px;
+  }
+  .vim_model {
+    height: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .vim_on {
+    height: 30px;
+    padding-bottom: 20px;
+  }
+  .vim_ifelse {
+    height: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .vim_show {
+    height: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .vim_cloak {
+    height: 30px;
+    padding-bottom: 20px;
+  }
+  [v-cloak] {
+    display: none;
+    padding-bottom: 20px;
+  }
+}

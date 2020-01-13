@@ -1,0 +1,35 @@
+<div :class="$style.banxin">
+  <!-- watch -->
+  <div :class="$style.watch">
+    <el-button round @click="simpleWatchs">watch简单</el-button>
+    <el-button round @click="complexWatchs">watch复杂</el-button>
+    <p>{{ simpleWatcha }}</p>
+    <p>{{ complexWatcha.color }}-------{{ complexWatcha.name }}</p>
+  </div>
+  <!-- computed计算属性简单 -->
+  <div :class="$style.computed">
+    <el-input
+      v-model="numbertable.numnone"
+      placeholder="请输入第一个值"
+    ></el-input>
+    <el-input
+      v-model="numbertable.numtwo"
+      placeholder="请输入第二个值"
+    ></el-input>
+    <p :class="$style.computed_pen">{{ tatolnum }}</p>
+  </div>
+  <!-- computed计算属性简单 -->
+  <div :class="$style.computed">
+    <el-input
+      v-model="fulllNames.firstName"
+      placeholder="请输入第一个值"
+    ></el-input>
+    <el-input
+      v-model="fulllNames.lastName"
+      placeholder="请输入第二个值"
+    ></el-input>
+    <el-input v-model="fullName"></el-input>
+  </div>
+  <!-- 指令自定义 -->
+  <p v-color="'red'">自定义指令</p>
+</div>
